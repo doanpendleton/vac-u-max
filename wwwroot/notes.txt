@@ -1,0 +1,6 @@
+DB User: Vac-U-Max    vacumaktDBA_main
+DB Pwd v@cuM@x0
+
+FTP
+   u developer
+   p v@cUm3ax

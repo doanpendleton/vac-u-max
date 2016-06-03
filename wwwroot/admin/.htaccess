@@ -1,0 +1,75 @@
+
+RewriteOptions inherit
+Options +FollowSymlinks
+
+RewriteEngine on
+
+ErrorDocument 404 /404.cfm
+rewritecond %{http_host} ^vac-u-max.com [nc]
+rewriterule ^(.*)$ http://www.vac-u-max.com/$1 [r=301,nc]
+
+rewritecond %{http_host} ^vac-u-max.net [nc]
+rewriterule ^(.*)$ http://www.vac-u-max.com/$1 [r=301,nc]
+
+rewritecond %{http_host} ^combustiblevacs.com [nc]
+rewriterule ^(.*)$ http://www.vac-u-max.com/landingVacuum.cfm$1 [r=301,nc]
+
+rewritecond %{http_host} ^www.vac-u-max.net [nc]
+rewriterule ^(.*)$ http://www.vac-u-max.com/$1 [r=301,nc]
+
+rewritecond %{http_host} ^pulsonics.com [nc]
+rewriterule ^(.*)$ http://www.vac-u-max.com/$1 [r=301,nc]
+
+rewritecond %{http_host} ^aeromechanical.com [nc]
+rewriterule ^(.*)$ http://www.vac-u-max.com/$1 [r=301,nc]
+
+rewritecond %{QUERY_STRING} ^cat=vac-u-max-pneumatic-conveying-systems\&prod=object-and-cap-conveying$
+rewriterule ^product\.cfm$ /product.cfm?cat=vac-u-max-pneumatic-conveying-systems&prod=pneumatic-bottle-cap-conveying-system? [r=302,L]
+
+#Sitemap
+RewriteRule ^sitemap.xml/?$ sitemap.cfm [L,NC]
+
+Redirect 301 /Interphex http://www.vac-u-max.com/news.cfm?article=27
+Redirect 301 /1020 http://www.vac-u-max.com/vacProd.cfm?cat=continuous-duty-vacuums&prod=MDL1020MFS
+Redirect 301 /Ethanol http://www.vac-u-max.com/news.cfm?article=29
+Redirect 301 /PowderShow http://www.vac-u-max.com/news.cfm?article=28
+Redirect 301 /convey.asp http://www.vac-u-max.com/landingPneumatic.cfm
+Redirect 301 /vacuum.asp http://www.vac-u-max.com/landingVacuum.cfm
+Redirect 301 /aeromechanical.html http://www.vac-u-max.com/product.cfm?cat=aero-mechanical-conveyors&prod=aero-mechanical-conveyors
+Redirect 301 /vacuum.asp http://www.vac-u-max.com/product.cfm?cat=flexible-screw-conveyors&prod=flexible-screw-conveyors
+Redirect 301 /flexible_screws.html http://www.vac-u-max.com/product.cfm?cat=flexible-screw-conveyors&prod=flexible-screw-conveyors
+Redirect 301 /company.html http://www.vac-u-max.com/corporate.cfm
+Redirect 301 /news.asp http://www.vac-u-max.com/news.cfm
+Redirect 301 /cases.asp http://www.vac-u-max.com/case_histories.cfm
+Redirect 301 /pneumatic_case_histories.html http://www.vac-u-max.com/case_histories.cfm
+Redirect 301 /i-secure.asp http://www.vac-u-max.com/sales/
+Redirect 301 /contactus.html http://www.vac-u-max.com/contact.cfm
+Redirect 301 /quote_pneumatic.html http://www.vac-u-max.com/quotePneumatic.cfm
+Redirect 301 /quote_vacuum.html http://www.vac-u-max.com/quoteVacuum.cfm
+Redirect 301 /terms.html http://www.vac-u-max.com/terms.cfm
+Redirect 301 /sitemap.html http://www.vac-u-max.com/site.cfm
+Redirect 301 /privacy.html http://www.vac-u-max.com/privacy.cfm
+Redirect 301 /search.asp http://www.vac-u-max.com/searchresults.cfm
+Redirect 301 /109013_mobile_conveyors.html http://www.vac-u-max.com/landingPneumatic.cfm
+Redirect 301 /bulk_bag_mdl104122.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=bulk-bag-unloader
+Redirect 301 /104121_bag_dump_station.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=bag-dump-stations
+Redirect 301 /blenders_mixers.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=direct-charge-blender-loading
+Redirect 301 /loss_weight_feeder.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=batch-weighing-systems
+Redirect 301 /bulk_bag_loading.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=bulk-bag-loader
+Redirect 301 /batch_weighing.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=batch-weighing-systems
+Redirect 301 /closures_containers.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=object-and-cap-conveying
+Redirect 301 /tablet_press_loader.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=tablet-press-loader
+Redirect 301 /bulk_bag_pre_conditioner.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=bulk-bag-pre-conditioner
+Redirect 301 /vacuum_power_sources.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=vacuum-power-sources
+Redirect 301 /pinch_valve_diverters.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=pant-leg-diverter-valves
+Redirect 301 /heavy_duty.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=bulk-bag-pre-conditioner
+Redirect 301 /vacuum_receivers.html http://www.vac-u-max.com/product.cfm?cat=components-and-accessories&prod=vacuum-receivers
+Redirect 301 /hot_melt_glue_chips.html http://www.vac-u-max.com/product.cfm?cat=products-by-application&prod=object-and-cap-conveying
+Redirect 301 /dry_chemical.html http://www.vac-u-max.com/product.cfm?subCat=waste-water-treatment&prod=potassium-permanganate-systems
+Redirect 301 /products.asp http://www.vac-u-max.com/landingVacuum.cfm
+Redirect 301 /product_details.asp http://www.vac-u-max.com/landingVacuum.cfm
+Redirect 301 /Vacuum http://www.vac-u-max.com/landingVacuum.cfm
+Redirect 301 /ProcessExpo http://www.vac-u-max.com/news.cfm?article=34
+Redirect 301 /vacuum http://www.vac-u-max.com/landingVacuum.cfm
+Redirect 301 /PackExpo http://www.vac-u-max.com/news.cfm?article=35
+Redirect 301 /packexpo http://www.vac-u-max.com/news.cfm?article=35
